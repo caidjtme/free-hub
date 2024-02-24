@@ -1,0 +1,11 @@
+if not game:IsLoaded() then
+    game.Loaded:Wait()
+end
+
+game:GetService("GuiService"):ClearError()
+
+local OrionLib = loadstring(game:HttpGet(("https://raw.githubusercontent.com/Giangplay/Script/main/Orion_Library_PE_V2.lua")))()
+local GameName = game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("VietNam hub", "Synapse")
+--main
